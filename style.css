@@ -1,0 +1,24 @@
+﻿.input
+
+{
+    padding: 8px;
+    margin: 5px 0;
+    width: 200px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+}
+

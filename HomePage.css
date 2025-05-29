@@ -1,0 +1,251 @@
+﻿body {
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/images/stars-bg.png'); /* optional background stars */
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    border-bottom: 2px solid yellow;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    .navbar a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        .navbar a:hover {
+            color: yellow;
+        }
+
+.logo {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+    .hero h1 {
+        font-size: 48px;
+        color: yellow;
+        text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+    }
+
+    .hero p {
+        font-size: 20px;
+        color: white;
+        margin-top: 20px;
+    }
+
+.button-group {
+    margin-top: 30px;
+}
+
+    .button-group a {
+        background-color: yellow;
+        color: black;
+        padding: 12px 24px;
+        margin: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        display: inline-block;
+    }
+
+        .button-group a:hover {
+            background-color: gold;
+        }
+
+
+
+.featured-content {
+    text-align: center;
+    color: yellow;
+    padding: 50px 20px;
+}
+
+    .featured-content h2 {
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+.underline {
+    width: 60px;
+    height: 3px;
+    background-color: yellow;
+    margin: 10px auto 30px auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #111;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 0, 0.3);
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+}
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        display: block;
+    }
+
+.card-text {
+    padding: 20px;
+}
+
+    .card-text h3 {
+        color: yellow;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card-text p {
+        color: #ccc;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+.btn-yellow {
+    display: inline-block;
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.saga-timeline {
+    background-color: #0c0c0c;
+    padding: 80px 20px;
+    text-align: center;
+    color: yellow;
+}
+
+    .saga-timeline h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    max-width: 600px;
+    gap: 20px;
+    background-color: #111;
+    border-left: 3px solid yellow;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,0,0.2);
+    position: relative;
+}
+
+    .timeline-item .dot {
+        width: 14px;
+        height: 14px;
+        background-color: yellow;
+        border-radius: 50%;
+        margin-top: 8px;
+        flex-shrink: 0;
+        box-shadow: 0 0 10px yellow;
+    }
+
+    .timeline-item .content h3 {
+        color: yellow;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .timeline-item .content p {
+        color: #ccc;
+        font-size: 14px;
+        margin: 0;
+    }
+body {
+    background-color: #000;
+    overflow: hidden;
+    color: white;
+}
+
+/* Star background container */
+.starfield {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* behind everything */
+    background: transparent;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: moveStars 10s linear infinite;
+}
+
+@keyframes moveStars {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: moveStars 10s linear infinite;
+    box-shadow: 0 0 4px 2px white; /* glow effect */
+    opacity: 0.9; /* more visible */
+}
