@@ -1,0 +1,28 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="LoginExample.aspx.cs" Inherits="DB_Creatures.LoginExample" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <%=resultOfConnection %>
+        <h1>Login</h1>
+        <div>
+            user name : <input type="text" name="userName" />
+            password : <input type="password" name="userPassword" />
+            <button type="submit" name="action" value="login">Login</button>
+           
+        </div>
+        <h1>Register</h1>
+        <div>
+            user name : <input type="text" name="registerUserName" />
+            password : <input type="password" name="registerUserPassword" />
+            full name : <input type="full name" name="registerFullName" />
+            <button type="submit"  name="action" value="register">Register</button>
+        </div>
+    </form>
+</body>
+</html>
